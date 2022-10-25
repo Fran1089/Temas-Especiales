@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardCornerRadius="8dp"
+        android:minHeight="100dp"
+        app:cardElevation="6dp">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linear_layout">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="211dp" android:id="@+id/constraintLayout">
+
+
+            <TextView
+                    android:text="Titulo de Prueba"
+                    android:layout_width="123dp"
+                    android:layout_height="37dp" android:id="@+id/articletext"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+                    app:layout_constraintHorizontal_bias="0.0" app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="16dp"/>
+            <TextView
+                    android:text="Pero mentiste no quedo nada de lo que prometiste, mentiste donde se fue todo eso que un dia me dijiste"
+                    android:layout_width="0dp"
+                    android:layout_height="43dp" android:id="@+id/descripciontext"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/articletext"/>
+            <TextView
+                    android:text="200"
+                    android:layout_width="113dp"
+                    android:layout_height="20dp" android:id="@+id/precio"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/descripciontext"
+            />
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/Removebtn"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/precio" android:layout_marginTop="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="8dp"
+                    app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/sharebtn"
+                    android:text="remove"/>
+            <Button
+                    android:text="share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/sharebtn"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="8dp" app:layout_constraintTop_toBottomOf="@+id/precio"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintVertical_bias="0.444" app:layout_constraintStart_toEndOf="@+id/Removebtn"
+                    app:layout_constraintHorizontal_bias="0.5"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

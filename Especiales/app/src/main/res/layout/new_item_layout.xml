@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/article_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp" android:hint="Articulo"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_marginStart="16dp" app:layout_constraintTop_toBottomOf="@+id/article_name"
+            android:layout_marginTop="32dp" android:hint="Descripcion"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/preciotext"
+            android:layout_marginStart="16dp" app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+            android:layout_marginTop="32dp" android:hint="Precio"/>
+    <Button
+            android:text="Adicionar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/CreateItem"
+            app:layout_constraintStart_toEndOf="@+id/btnClean" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/button" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="16dp" android:onClick="CreateItem"/>
+    <Button
+            android:text="Limpiar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/btnClean"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/CreateItem"
+            android:onClick="ClearForm" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="16dp"/>
+    <Button
+            android:text="Volver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            app:layout_constraintStart_toEndOf="@+id/CreateItem"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"
+            android:onClick="Return" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="16dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
