@@ -49,7 +49,7 @@
             <TextView
                     android:text="200"
                     android:layout_width="113dp"
-                    android:layout_height="20dp" android:id="@+id/PriceField"
+                    android:layout_height="20dp" android:id="@+id/priceField"
                     app:layout_constraintTop_toBottomOf="@+id/vendorText"
                     android:layout_marginTop="10dp" app:layout_constraintStart_toStartOf="parent"
                     android:layout_marginStart="6dp"/>
@@ -57,7 +57,7 @@
                     android:text="Add to cart"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" android:id="@+id/addToCart"
-                    app:layout_constraintStart_toEndOf="@+id/PriceField"
+                    app:layout_constraintStart_toEndOf="@+id/priceField"
                     android:layout_marginStart="24dp" app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/vendorText" android:layout_marginTop="10dp"/>
             <Button
@@ -66,7 +66,7 @@
                     android:text="Edit"
                     android:layout_marginBottom="16dp" app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/PriceField" android:layout_marginTop="30dp"
+                    app:layout_constraintTop_toBottomOf="@+id/priceField" android:layout_marginTop="30dp"
                     app:layout_constraintHorizontal_bias="0.501" app:layout_constraintVertical_bias="1.0"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>

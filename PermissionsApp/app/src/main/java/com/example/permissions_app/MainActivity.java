@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
         for(PermissionsSwitch aux:switch_permissions){
             if(ContextCompat.checkSelfPermission(this, aux.getPermission()) == PackageManager.PERMISSION_GRANTED){
                 aux.getAux().setChecked(true);
-                //aux.getAux().setClickable(false);
             }
 
         }
@@ -52,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(this, permissionsSwitch.getPermission_name()+" permission granted", Toast.LENGTH_SHORT).show();
                 }
             }
-            Intent intent = new Intent(this, CheckPermissions.class);
+            Intent intent = new Intent(this, CheckPermiss   ions.class);
             startActivity(intent);
         }
     }

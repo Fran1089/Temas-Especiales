@@ -3,9 +3,7 @@ package com.example.parcial1;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import org.jetbrains.annotations.NotNull;
@@ -59,9 +57,9 @@ public class Adapter extends RecyclerView.Adapter<Adapter.Holder>
         public Holder(@NonNull @NotNull View itemView) {
             super(itemView);
 
-            nombre_articulo = itemView.findViewById(R.id.articletext);
-            descripcion_articulo = itemView.findViewById(R.id.descripciontext);
-            precio = itemView.findViewById(R.id.precio);
+            nombre_articulo = itemView.findViewById(R.id.vendorText);
+            descripcion_articulo = itemView.findViewById(R.id.descriptionText);
+            precio = itemView.findViewById(R.id.PriceField);
 
         }
     }

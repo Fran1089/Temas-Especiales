@@ -1,13 +1,9 @@
 package com.example.parcial1;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import org.w3c.dom.Text;
 
 public class Form extends AppCompatActivity {
 
@@ -18,15 +14,15 @@ public class Form extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.new_item_layout);
 
-        name_text = (TextView) findViewById(R.id.articletext);
-        name_article = (TextView) findViewById(R.id.descripciontext);
+        name_text = (TextView) findViewById(R.id.vendorText);
+        name_article = (TextView) findViewById(R.id.descriptionText);
         price = (TextView) findViewById(R.id.preciotext);
 
 
     }
 
     public void CreateItem(View view){
-        MainActivity.AddItem(new Articulo((String) name_text.getText(), (String) name_article.getText(), (float) 24.2));
+        MainActivity.aux.add(new Articulo((String) name_text.getText(), (String) name_article.getText(), (float) 24.2));
         ClearForm(view);
     }
 

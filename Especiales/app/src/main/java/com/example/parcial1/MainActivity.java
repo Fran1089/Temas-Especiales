@@ -13,7 +13,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    static List<Articulo> aux = new ArrayList<>();
+    static List<Articulo> aux;
 
     static Adapter adapter;
 
@@ -22,9 +22,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         RecyclerView rw = findViewById(R.id.recyclerview);
+        if(aux == null){
+            aux = new ArrayList<>();
+            aux.add(new Articulo("Duki", "Desde el fin del mundo es el primer album oficial", 299));
+            aux.add(new Articulo("CRO", "Vamos a ver si esto funciona", 600));
+        }
 
-        aux.add(new Articulo("Duki", "Desde el fin del mundo es el primer album oficial", 299));
-        aux.add(new Articulo("CRO", "Vamos a ver si esto funciona", 600));
 
         adapter = new Adapter(aux);
 
